@@ -1,0 +1,33 @@
+section#section_1 {
+    height: 1001.98px;
+    position: relative;
+    top: -115px;
+
+    .section_design {
+        img {
+            width: 100%;
+        }
+
+        svg {
+            z-index: 2;
+            position: absolute;
+            width: 100%;
+        }
+
+        .img_top {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+
+        .img_wrapper {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+
+
+    }
+}

@@ -1,9 +1,125 @@
+// font-family: 'Poppins', sans-serif;
+// font-family: 'Roboto', sans-serif;
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
+
 }
-:root{
-    
+
+:root {
+    --text-color-d7: #0D13D7;
+
+    .color-d7 {
+        color: var(--text-color-d7);
+    }
+
+    --color-0: #000000;
+
+    .color-0 {
+        color: var(--color-0);
+    }
+
+    --color-f: #FFFFFF;
+
+    .color-f {
+        color: var(--color-f);
+    }
 }
-body {}
+
+
+.section_wrapper {
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 50px;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+button {
+    border: 0;
+    outline: 0;
+    display: inline-block;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+// .......................Header.................
+header#header {
+    position: relative;
+    z-index: 3;
+
+    nav#navbar {
+        display: flex;
+        align-items: center;
+
+        .logo_action {
+            font-size: 38px;
+            display: flex;
+            align-items: center;
+
+            span:first-child {
+                margin-right: 8px;
+            }
+        }
+
+        .navbar_list {
+            margin-left: auto;
+
+            .navbar_list_item {
+                .navbar_list_action {
+                    display: inline-block;
+                    font-size: 22px;
+                    font-family: 'Poppins', sans-serif;
+                    margin-right: 35px;
+                    font-weight: 400;
+                    color: white;
+                    line-height: 33px;
+                    position: relative;
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        bottom: -5px;
+                        left: 0;
+                        width: 100%;
+                        transform: scaleX(0);
+                        height: 4px;
+                        background: var(--text-color-d7);
+                        border-radius: 15px;
+                        transition: .1s;
+                    }
+
+                    &.active_action::after,
+                    &:hover::after {
+                        transform: scaleX(1);
+                    }
+                    &:hover::after{
+                        opacity: .5
+                    }
+                    &.active_action::after{
+                        opacity: 1;
+                    }
+                }
+
+                .navbar_list_btn {
+                    display: inline-block;
+                    background: #fff;
+                    color: var(--color-0);
+                    font-size: 20px;
+                    padding: 11px 30px;
+                    border-radius: 30px;
+                    font-family: 'Poppins', sans-serif;
+                }
+            }
+        }
+    }
+}

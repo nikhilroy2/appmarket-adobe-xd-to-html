@@ -1,1 +1,24 @@
-/*# sourceMappingURL=index.css.map */
+section#section_1 {
+  height: 1001.98px;
+  position: relative;
+  top: -115px;
+}
+section#section_1 .section_design img {
+  width: 100%;
+}
+section#section_1 .section_design svg {
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+}
+section#section_1 .section_design .img_top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+section#section_1 .section_design .img_wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+}/*# sourceMappingURL=index.css.map */
